@@ -1,0 +1,10 @@
+function map(f, tab){
+  var tab2;
+  for (var i = 0; i < tab.length; i++) {
+    tab[i]=f(tab[i]);
+  }
+  return tab;
+}
+t1= new Array(4,16,9,25);
+var tbr= map(Math.sqrt, t1);
+console.log(tbr);

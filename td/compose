@@ -1,0 +1,8 @@
+function compose(f1, f2,v){
+  var r1=f1(v)
+  var r2=f2(r1);
+  return r;
+}
+var r=16;
+var re= compose(Math.sqrt,Math.sqrt, r);
+console.log(re);

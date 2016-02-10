@@ -1,0 +1,7 @@
+function longueur(x){
+  var t=x.length;
+  return t;
+}
+var a="test";
+var l= longueur(a);
+console.log('la longuer est  = ' + l );

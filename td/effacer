@@ -1,0 +1,12 @@
+function effacer(a,b){var me='';
+  for (var i = 0; i < b.length; i++) {
+    if( b[i] != a) {
+      me=me+b[i];
+    }
+  }
+  return me;
+}
+var c='eabcdeabcde';
+console.log('avant : ' +c);
+var k= effacer('e',c);
+console.log('apres : '+k);

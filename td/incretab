@@ -1,0 +1,15 @@
+/*function f(x){
+  x=x+1;
+  return x;
+}*/
+function map(x){
+     var y=[];
+      for (var i=0 ;i<x.lenght ; i++){
+        y[i]= x[i]+1 ;
+        }
+  return y;
+}
+var a=[1,2,3,5];
+var t= map(a);
+console.log(a);
+console.log(t);

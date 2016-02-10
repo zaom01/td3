@@ -1,0 +1,19 @@
+function second(tab){
+   var  t= tab.lenght;
+   var temp=0;
+  for (var i = 0; i < t-1; i++) {
+    for (var j = i+1; j < t; i++) {
+      if( tab[j] < tab[i] ){
+             temp =tab[i];
+            tab[i] =tab[j];
+            tab[j] =temp;
+      }
+
+    }
+    return tab[1];
+  }
+}
+var t1= new Array(2,5,8,9,1);
+console.log(t1);
+var se=second(t1);
+console.log(se);

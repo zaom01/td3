@@ -1,0 +1,13 @@
+function fmap(tabfunc, v){
+           d=0;
+        for (var i = 0; i < tabfunc.length; i++) {
+          d=tabfunc[i](v);
+        }
+        return d;
+}
+function racine(v){
+  return Math.sqrt(v);
+}
+var tabf = new Array (racine, racine , racine);
+var tfur= fmap(tabf, 4);
+console.log(tfur);
